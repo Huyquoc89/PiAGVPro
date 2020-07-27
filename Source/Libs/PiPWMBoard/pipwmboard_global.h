@@ -1,0 +1,12 @@
+#ifndef PIPWMBOARD_GLOBAL_H
+#define PIPWMBOARD_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PIPWMBOARD_LIBRARY)
+#  define PIPWMBOARDSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define PIPWMBOARDSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PIPWMBOARD_GLOBAL_H

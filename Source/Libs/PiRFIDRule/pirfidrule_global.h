@@ -1,0 +1,12 @@
+#ifndef PIRFIDRULE_GLOBAL_H
+#define PIRFIDRULE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PIRFIDRULE_LIBRARY)
+#  define PIRFIDRULESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define PIRFIDRULESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PIRFIDRULE_GLOBAL_H
